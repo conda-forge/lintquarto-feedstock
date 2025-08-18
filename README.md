@@ -7,7 +7,7 @@ Home: https://lintquarto.github.io/lintquarto/
 
 Package license: MIT
 
-Summary: Package for running linters and static type checkers on quarto .qmd files.
+Summary: Package for running linters, static type checkers and code analysis tools on python code in quarto (.qmd) files.
 
 Development: https://github.com/lintquarto/lintquarto
 
