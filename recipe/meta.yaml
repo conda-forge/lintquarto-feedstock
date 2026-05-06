@@ -1,13 +1,13 @@
-{% set name = "lintquarto" %}
-{% set version = "0.9.0" %}
+{% set python_min = "3.9" %}
+{% set version = "0.10.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: lintquarto
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lintquarto-{{ version }}.tar.gz
-  sha256: 782dcfb30e182193ac8035b8e494291605c774dd7d879da80c6e38468ff0f517
+  url: https://pypi.org/packages/source/l/lintquarto/lintquarto-{{ version }}.tar.gz
+  sha256: d004e63f30779047d89182557e0ac738177e851f9b4a9e19f14929e2506f6b7b
 
 build:
   entry_points:
@@ -33,8 +33,8 @@ test:
     - pip check
     - lintquarto --help
   requires:
-    - python {{ python_min }}
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://lintquarto.github.io/lintquarto/
