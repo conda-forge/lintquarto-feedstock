@@ -1,5 +1,5 @@
 {% set python_min = "3.9" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: lintquarto
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/lintquarto/lintquarto-{{ version }}.tar.gz
-  sha256: d004e63f30779047d89182557e0ac738177e851f9b4a9e19f14929e2506f6b7b
+  sha256: 8d12411394384cba9e6b33bc816420c41bcdd3076b2521dd30cde4f5dca2e63b
 
 build:
   entry_points:
