@@ -1,5 +1,5 @@
-{% set python_min = "3.9" %}
-{% set version = "0.11.0" %}
+{% set python_min = "3.10" %}
+{% set version = "0.12.0" %}
 
 package:
   name: lintquarto
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/lintquarto/lintquarto-{{ version }}.tar.gz
-  sha256: 8d12411394384cba9e6b33bc816420c41bcdd3076b2521dd30cde4f5dca2e63b
+  sha256: 3052150c3249913419aa3b71fb6f010050342e7e5e5ae7d33eba33846fe45fae
 
 build:
   entry_points:
@@ -24,6 +24,8 @@ requirements:
   run:
     - python >={{ python_min }}
     - toml
+    - tree_sitter
+    - tree-sitter-markdown
     - pyyaml
 
 test:
