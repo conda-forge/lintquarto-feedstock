@@ -1,5 +1,5 @@
 {% set python_min = "3.10" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: lintquarto
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/l/lintquarto/lintquarto-{{ version }}.tar.gz
-  sha256: 8389695f226a35d98215e5f9b49e4738ab3af3872c80afbfacbc16b98903bed0
+  sha256: c02b5a03dbb2f389bbcb8de3a87675c43720421442e869ab1b54e15d6dca5598
 
 build:
   entry_points:
@@ -40,7 +40,7 @@ test:
 
 about:
   home: https://lintquarto.github.io/lintquarto/
-  summary: Package for running linters, static type checkers and code analysis tools on python code in quarto (.qmd) files.
+  summary: Package for running linters, formatters, static type checkers and code analysis tools on python code in quarto (.qmd) files.
   dev_url: https://github.com/lintquarto/lintquarto
   license: MIT
   license_file: LICENSE
