@@ -1,5 +1,5 @@
 {% set python_min = "3.10" %}
-{% set version = "0.13.1" %}
+{% set version = "" %}
 
 package:
   name: lintquarto
